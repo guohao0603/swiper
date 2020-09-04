@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper</title>
+    <link rel="stylesheet" href="../css/swiper.css">
+    <style>
+       html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 360px;
+      
+    }
+    .swiper-wrapper {
+      background-color: #eee;
+    }
+    .swiper-slide {
+      width: 50px;
+      height: 50px;
+    }
+    .swiper-slide p {
+      text-align: center;
+    }
+
+  
+    </style>
+</head>
+<body>
+  <div class="swiper-container" id="pic-swiper1">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <p>户外</p>
+      </div>
+      <div class="swiper-slide">
+        <p>摄影</p>
+      </div>
+      <div class="swiper-slide">
+        <p>亲子</p>
+      </div>
+      <div class="swiper-slide">
+        <p>海岛</p>
+      </div>
+      <div class="swiper-slide">
+        <p>营地</p>
+      </div>
+    </div>
+  </div>
+
+  
+
+</body>
+<script src="../js/swiper.js"></script>
+<script>        
+    var mySwiper1 = new Swiper ('#pic-swiper1',{
+      slidesPerView : 4.5,
+    })    
+        
+    </script>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper</title>
+    <link rel="stylesheet" href="../css/swiper.css">
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      #swiper1{
+        width: 740px;
+        height: 330px;
+        background-color: #000000;
+      }
+      #swiper1 img {
+        width: 740px;
+        height: 330px;
+      }
+
+      #swiper2{
+        width: 740px;
+        height: 140px;
+        background-color: #000000;
+      }
+      #swiper2 img {
+        width: 246px;
+        height: 140px;
+      }
+      .swiper-slide-visible  {
+        opacity: 0.2;
+      }
+      .swiper-slide-thumb-active{
+        opacity: 1;
+      }
+    </style>
+</head>
+<body>
+    <div class="swiper-container" id="swiper1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../imgs/01.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../imgs/02.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../imgs/03.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="swiper-container" id="swiper2">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../imgs/01.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="../imgs/02.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="../imgs/03.jpg" alt="">
+          </div>
+      </div>
+  </div>
+
+</body>
+<script src="../js/swiper.js"></script>
+<script>    
+   var mySwiper2 = new Swiper ('#swiper2', {
+     loop: true, // 循环模式选项
+     slidesPerView: 3,
+     watchSlidesVisibility: true,//防止不可点击
+   })    
+    var mySwiper1 = new Swiper ('#swiper1', {
+      loop: true, // 循环模式选项
+      thumbs: {
+        swiper: mySwiper2,
+      }
+      
+    })       
+          
+    </script>
+</html>

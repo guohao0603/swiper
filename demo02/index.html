@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper</title>
+    <link rel="stylesheet" href="../css/swiper.css">
+    <style>
+       html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 360px;
+    }
+    img {
+      width: 100%;
+      height: 360px;
+    }
+
+  
+    </style>
+</head>
+<body>
+  <div class="swiper-container" id="pic-swiper1">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="../imgs/01.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="../imgs/02.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="../imgs/03.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="swiper-container" id="pic-swiper2">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="../imgs/01.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="../imgs/02.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="../imgs/03.jpg" alt="">
+      </div>
+    </div>
+  </div> -->
+
+</body>
+<script src="../js/swiper.js"></script>
+<script>        
+    var mySwiper1 = new Swiper ('#pic-swiper1',{
+      initialSlide :1,
+      direction : 'horizontal',
+      speed:300,
+      autoplay : {
+        delay:1000
+      },
+      loop: true
+    })    
+    // var mySwiper2 = new Swiper ('#pic-swiper2',{
+    //   direction : 'horizontal',
+    //   speed:300,
+    //   autoplay : {
+    //     delay:3000
+    //   },
+    // })        
+    </script>
+</html>
